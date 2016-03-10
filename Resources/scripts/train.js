@@ -38,7 +38,8 @@ while(true){
   var color, unit; //Variables declaration
   for (i = 0; i <= 3; i++){
     color = BotImage.GetWindowImage(hidemode).GetPixel(barrackCaseLocaton[i].x, barrackCaseLocaton[i].y);
-    if(color.R >= 135 && color.R <= 137){
+    //if(color.R >= 135 && color.R <= 137)
+    {
       Bot.Wait(250);
       BotMouse.SendClick(0, barrackCaseLocaton[i].x, barrackCaseLocaton[i].y);
       Bot.Wait(250);
